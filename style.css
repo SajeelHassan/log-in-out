@@ -4,16 +4,16 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 #container {
-  width: 90vw;
-  height: 90vh;
+  width: 850px;
+  height: 478px;
   margin: 0 auto;
   position: relative;
 }
 .mybkg {
-  background-image: url(./images/bkg1.jpg);
+  background-image: url(./images/bkg.jpg);
   width: 100%;
   height: 100%;
   background-size: center;
@@ -22,15 +22,121 @@ body {
 #card {
   position: relative;
   background-color: white;
-  width: 35%;
+  width: 290px;
   height: 420px;
   left: 10px;
   top: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 14px 0px rgba(173, 171, 173, 0.57);
 }
 #card-info {
-  background-color: aqua;
   position: relative;
-  width: 90%;
+  width: 82%;
   top: 30px;
   margin: 0 auto;
+}
+#card-info h1 {
+  display: inline-block;
+  margin: 0px;
+}
+#card-info p {
+  margin-top: 2px;
+  color: grey;
+}
+.span-a a {
+  color: #a577e6;
+  font-weight: bold;
+}
+.forgot {
+  float: right;
+}
+.inputs label {
+  font-weight: bold;
+}
+.inputs input {
+  width: 100%;
+  margin-top: 3px;
+  height: 40px;
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 12px;
+  border-color: #b3aeb3;
+}
+::placeholder {
+  color: grey;
+  opacity: 0.6;
+}
+.inputs input:focus {
+  outline: none;
+}
+.remember-me {
+  margin: 15px 0;
+}
+.remember-me div {
+  color: grey;
+  display: inline-block;
+  font-size: 11px;
+}
+.remember-me input {
+  margin: 0px;
+  position: relative;
+  top: 1px;
+}
+#login-btn input {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 4px;
+  font-size: 11px;
+  padding: 8px;
+  border-color: #7837d3;
+  color: white;
+  font-weight: bold;
+  background-color: #7837d3;
+  width: 100%;
+  height: 36px;
+  cursor: pointer;
+}
+.hr-text {
+  margin: 10px 0px;
+  opacity: 0.5;
+  text-align: center;
+}
+.hr-text hr {
+  width: 33%;
+  display: inline-block;
+  vertical-align: middle;
+  color: gray;
+  opacity: 0.5;
+}
+.hr-text p {
+  display: inline-block;
+  width: 30%;
+  color: gray;
+  font-size: 11px;
+}
+.google-btn,
+.fb-btn {
+  display: inline-block;
+  width: 45%;
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 4px;
+  font-size: 11px;
+  padding: 8px;
+  font-weight: bold;
+  background-color: white;
+}
+.google-logo {
+  background-image: url(./icons/search.png);
+}
+.fb-logo {
+  background-image: url(./icons/facebook.png);
+}
+.google-btn {
+  color: #db4437;
+}
+.fb-btn {
+  color: #3b5998;
 }
