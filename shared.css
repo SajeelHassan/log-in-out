@@ -21,7 +21,8 @@ body {
   background-repeat: no-repeat;
   vertical-align: middle;
 }
-#card {
+#card,
+#signup-card {
   position: relative;
   background-color: white;
   width: 290px;
@@ -30,6 +31,9 @@ body {
   top: 15px;
   border-radius: 6px;
   box-shadow: 0px 10px 14px 0px rgba(173, 171, 173, 0.57);
+}
+#signup-card {
+  height: 660px;
 }
 #card-info {
   position: relative;
@@ -89,7 +93,8 @@ body {
   position: relative;
   top: -1px;
 }
-#login-btn input {
+#login-btn input,
+#signup-btn input {
   border-width: 1.5px;
   border-style: solid;
   border-radius: 4px;
@@ -136,10 +141,12 @@ body {
 }
 .google-btn {
   color: #db4437;
+  cursor: pointer;
 }
 .fb-btn {
   color: #3b5998;
   float: right;
+  cursor: pointer;
 }
 .google-logo img,
 .fb-logo img {
@@ -152,5 +159,4 @@ body {
   display: inline-block;
   margin: 0px;
   vertical-align: middle;
-  /* float: right; */
 }
