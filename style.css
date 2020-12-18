@@ -8,24 +8,26 @@ body {
 }
 #container {
   width: 850px;
-  height: 478px;
+  height: 578px;
   margin: 0 auto;
   position: relative;
+  background-color: black;
 }
 .mybkg {
-  background-image: url(./images/bkg.jpg);
+  background-image: url(./images/bkg1.jpg);
   width: 100%;
   height: 100%;
   background-size: center;
   background-repeat: no-repeat;
+  vertical-align: middle;
 }
 #card {
   position: relative;
   background-color: white;
   width: 290px;
-  height: 420px;
+  height: 450px;
   left: 10px;
-  top: 30px;
+  top: 15px;
   border-radius: 6px;
   box-shadow: 0px 10px 14px 0px rgba(173, 171, 173, 0.57);
 }
@@ -39,7 +41,7 @@ body {
   display: inline-block;
   margin: 0px;
 }
-#card-info p {
+#card-info > p {
   margin-top: 2px;
   color: grey;
 }
@@ -49,10 +51,12 @@ body {
 }
 .forgot {
   float: right;
+  font-size: 10px;
 }
 .inputs label {
   font-weight: bold;
 }
+
 .inputs input {
   width: 100%;
   margin-top: 3px;
@@ -72,17 +76,18 @@ body {
   outline: none;
 }
 .remember-me {
-  margin: 15px 0;
+  margin: 20px 0 15px 0;
 }
 .remember-me div {
   color: grey;
   display: inline-block;
-  font-size: 11px;
+  font-size: 10px;
+  vertical-align: top;
 }
 .remember-me input {
   margin: 0px;
   position: relative;
-  top: 1px;
+  top: -1px;
 }
 #login-btn input {
   border-width: 1.5px;
@@ -99,7 +104,7 @@ body {
   cursor: pointer;
 }
 .hr-text {
-  margin: 10px 0px;
+  margin: 3px 0px;
   opacity: 0.5;
   text-align: center;
 }
@@ -119,24 +124,33 @@ body {
 .google-btn,
 .fb-btn {
   display: inline-block;
-  width: 45%;
+  width: 47%;
   border-width: 1.5px;
   border-style: solid;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 11px;
   padding: 8px;
   font-weight: bold;
   background-color: white;
-}
-.google-logo {
-  background-image: url(./icons/search.png);
-}
-.fb-logo {
-  background-image: url(./icons/facebook.png);
+  text-align: center;
 }
 .google-btn {
   color: #db4437;
 }
 .fb-btn {
   color: #3b5998;
+  float: right;
+}
+.google-logo img,
+.fb-logo img {
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+}
+.google-btn p,
+.fb-btn p {
+  display: inline-block;
+  margin: 0px;
+  vertical-align: middle;
+  /* float: right; */
 }
