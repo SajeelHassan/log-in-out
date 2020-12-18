@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="container">
+        <div id="mybkg"></div>
+        <div id="card">
+            <div id="card-info">
+                <h1>Login</h1>
+                <p>Doesn't have an account yet? <span><a href='/signup.html'>Sign Up</a></span></p>
+                <div id="inputs">
+                    <form id='login-form'>
+                        <div>
+                            <label for="email">Email Address</label><br>
+                            <input type="email" name="loginEmail" id="email">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="login-password">Password <span id='forgot-pwd'><a href='#'>Forgot Password?</a></span></label><br>
+                            <input type="password" name="loginPwd" id="login-password">
+                        </div>
+                        
+                        <input type="checkbox" name="rememberMe" id="rememberMe"> <b> Remember me</b>
+                        <div id="login-btn"><input type="submit" value="LOGIN"></div>
+                    </form>
+                    
+                </div>
+                <hr>
+                    <div id="social-buttons">
+                        <button id='google-btn'>Google</button>
+                        <button id='fb-btn'>Facebook</button>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
