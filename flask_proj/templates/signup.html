@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='shared.css') }}">
+
+    <title>Signup</title>
+</head>
+<body>
+    <div id="container" class="mybkg">
+        
+        <div id="signup-card">
+            <div id="card-info">
+                <h1>Signup</h1>
+                <p>Already have an account? <span class='span-a'><a href='/login'>Login</a></span></p>
+                <div id="message-block">
+                    <div id="error">
+                        <p id="i_uname-pwd">Signup Failure</p>
+                        <p id="l_empty">Empty Field/Fields - Fill and Click Signup</p>
+                    </div>
+                </div>
+                <div >
+                    <form id='signup-form' method="post" >
+                        <div class='inputs'>
+                            <label for="fullname">Full Name</label><br>
+                            <input type="text" name="fullname" id="fullname" placeholder="Enter your full name">
+                        </div> <br>
+                        <div class='inputs'>
+                            <label for="email">Email Address</label><br>
+                            <input type="email" name="signup-email" id="email" placeholder="you@example.com">
+                        </div>
+                        <br>
+                        <div class='inputs'>
+                            <label for="signup-username">Username</label><br>
+                            <input type="text" name="signup-username" id="signup-username" placeholder="Enter Username">
+                        </div>
+                        <br>
+                        <div class='inputs'>
+                            <label for="signup-password">Password </label><br>
+                            <input type="password" name="signupPwd" id="signup-password" placeholder="Enter 6 character or more">
+                        </div>
+                        <br>
+                        <div class='inputs'>
+                            <label for="signup-password-confirm"> Confirm Password </label><br>
+                            <input type="password" name="signupPwd-confirm" id="signup-password-confirm" placeholder="Confirm your password">
+                        </div>
+                        <div>
+                        <br>
+                        </div>
+                        <div id="signup-btn"><input type="submit" value="SIGNUP"></div>
+                    </form>
+                    
+                </div>
+                <div class="hr-text"><hr> <p>or signup with</p> <hr> </div>
+                    <div id="social-buttons">
+                        <div class="google-btn">
+                            <div class="g-btn">
+                                <span class='google-logo'><img src="/static/icons/search.png"></span>
+                            <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="fb-btn">
+                            <div class="f-btn">
+                                <span class='fb-logo'><img src="/static/icons/facebook.png"></span>
+                            <p>Facebook</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"> </script>
+    <script>
+        {% if invalid!=''%}
+            alert('invalid  {{ invalid }}');
+        {% endif %}
+    </script>
+</body>
+</html>

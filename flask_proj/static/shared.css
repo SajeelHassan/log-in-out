@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
+  background-color: #e2e0e0;
 }
 #container {
   width: 1000px;
@@ -14,7 +15,7 @@ body {
   background-color: black;
 }
 .mybkg {
-  background-image: url(./images/bkg1.jpg);
+  background-image: url('/static/images/mybkg.png');
   width: 100%;
   height: 100%;
   background-size: center;
@@ -27,7 +28,7 @@ body {
   background-color: white;
   width: 290px;
   height: 450px;
-  left: 10px;
+  left: 50px;
   top: 15px;
   border-radius: 6px;
   box-shadow: 0px 10px 14px 0px rgba(173, 171, 173, 0.57);
@@ -159,4 +160,34 @@ body {
   display: inline-block;
   margin: 0px;
   vertical-align: middle;
+}
+#message-block{
+  display: none;
+  position: absolute;
+  background-color: white;
+  left:275px;
+  top:20px;
+  width:290px;
+  height:70px;
+
+  border-radius: 6px;
+  box-shadow: 0px 10px 14px 0px rgba(173, 171, 173, 0.57);
+}
+#message-block p{
+  text-align: center;
+  position: relative;
+  margin:25px auto;
+  color:red;
+  font-size: 14px;
+  font-weight: bold;
+}
+#i_uname-pwd{
+  display: none;
+}
+#l_empty{
+  display: none;
+}
+#message-block:hover {
+  visibility: visible;
+
 }
